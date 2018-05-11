@@ -1,0 +1,161 @@
+#landing {
+  position: relative;
+  background-image: url("../../images/snowy.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #landing::before {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background-color: rgba(0, 5, 43, 0.8);
+    background-position: inherit;
+    background-repeat: inherit;
+    background-size: inherit;
+    z-index: 0; }
+
+header {
+  padding: 0 0.7rem;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  header a {
+    height: 12px;
+    margin: 1rem 0;
+    position: relative;
+    text-decoration: none;
+    border-bottom: 3px solid white;
+    width: 30px;
+    line-height: 1px; }
+    header a::before {
+      content: "";
+      position: absolute;
+      border-bottom: 3px solid white;
+      bottom: 3px;
+      width: 30px; }
+  header .hamburger {
+    border-top: 3px solid white; }
+  header p {
+    padding: 0.2rem;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: #fff;
+    color: #21263D; }
+
+#hero {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  #hero h1 {
+    border-bottom: 2px solid white;
+    line-height: 2.2;
+    margin: 0;
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 600;
+    /*&::before {
+      content: "";
+      position: absolute;
+      bottom: -1.2rem;
+      width: 100%;
+      border: 1px solid white;
+      line-height: normal;
+    }*/ }
+
+#boxes {
+  background-color: blue;
+  margin: 0; }
+  #boxes .box {
+    min-height: 70vh;
+    border-bottom: 1px solid black;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #boxes .box_content {
+    width: fit-content; }
+  #boxes h2 {
+    border-bottom: 2px solid white;
+    line-height: 2.2; }
+  #boxes p {
+    margin-top: 0.8rem; }
+
+#section {
+  background-color: blue; }
+
+html {
+  width: 100%;
+  font-size: 14px;
+  overflow-x: hidden; }
+
+body {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  overflow-x: hidden; }
+
+.main {
+  padding: 0 1.5rem; }
+
+p {
+  position: relative;
+  margin: 0;
+  margin-top: 2rem;
+  letter-spacing: 2.5px;
+  line-height: 1.4;
+  font-size: 0.7rem;
+  font-weight: inherit;
+  text-transform: uppercase;
+  text-align: justify; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+button {
+  text-align: left;
+  width: 175px;
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 1.7rem;
+  padding: 1rem;
+  letter-spacing: 2.5px;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  background-color: inherit;
+  color: #fff;
+  border: 2px solid white; }
+  button::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    right: 19px;
+    top: 50%;
+    width: 30px;
+    border-bottom: 2px solid white; }
+  button::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 17px;
+    width: 12px;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg); }
+  button .right_arrow {
+    position: absolute;
+    bottom: 38%;
+    right: 17px;
+    width: 12px;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg); }
+
+/*# sourceMappingURL=main.css.map */

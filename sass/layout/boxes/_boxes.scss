@@ -1,0 +1,23 @@
+#boxes {
+  background-color: blue;
+  margin: 0;
+  .box {
+    min-height: 70vh;
+    border-bottom: 1px solid black;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box_content {
+  width: fit-content;
+  }
+  h2 {
+    border-bottom: 2px solid white;
+    line-height: 2.2;
+  }
+  p {
+    margin-top: 0.8rem;
+  }
+}

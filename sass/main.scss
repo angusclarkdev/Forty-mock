@@ -1,0 +1,84 @@
+@import "./base/pallete.scss";
+@import "./layout/landing/landing.scss";
+@import "./layout/landing/header/header.scss";
+@import "./layout/landing/hero.scss";
+@import "./layout/boxes/boxes.scss";
+@import "./layout/section/section.scss";
+
+
+
+// General styles //
+
+html {
+  //height: 100%;
+  width: 100%;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+body {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  overflow-x: hidden;
+}
+.main {
+  padding: 0 1.5rem;
+}
+p {
+  position: relative;
+  margin: 0;
+  margin-top: 2rem;
+  letter-spacing: 2.5px;
+  line-height: 1.4;
+  font-size: 0.7rem;
+  font-weight: inherit;
+  text-transform: uppercase;
+  text-align: justify;
+
+}
+h1,h2,h3 {
+  margin: 0;
+}
+button {
+  text-align: left;
+  width: 175px;
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 1.7rem;
+  padding: 1rem;
+  letter-spacing: 2.5px;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  background-color: inherit;
+  color: #fff;
+  border: 2px solid white;
+&::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  right: 19px;
+  top: 50%;
+  width: 30px;
+  border-bottom: 2px solid white;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 17px;
+    width: 12px;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+  }
+  .right_arrow {
+    position: absolute;
+    bottom: 38%;
+    right: 17px;
+    width: 12px;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+  }
+}

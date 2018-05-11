@@ -1,0 +1,38 @@
+header {
+  padding: 0 0.7rem;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    a {
+      height: 12px;
+      margin: 1rem 0;
+      position: relative;
+      text-decoration: none;
+      border-bottom: 3px solid white;
+      width: 30px;
+      line-height: 1px;
+      &::before {
+        content: "";
+        position: absolute;
+         border-bottom: 3px solid white;
+         bottom: 3px;
+        width: 30px;
+      }
+    }
+    .hamburger {
+      //margin-top: 7.5px;
+     border-top: 3px solid white;
+    }
+    p {
+      padding: 0.2rem;
+      margin: 1rem 0;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background-color: #fff;
+      color: $darkblue;
+    }
+  }
