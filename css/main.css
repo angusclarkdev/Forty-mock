@@ -69,7 +69,7 @@ header {
     }*/ }
 
 #boxes {
-  background-color: blue;
+  background-image: url();
   margin: 0; }
   #boxes .box {
     min-height: 70vh;
@@ -83,9 +83,49 @@ header {
     width: fit-content; }
   #boxes h2 {
     border-bottom: 2px solid white;
-    line-height: 2.2; }
+    line-height: 2.2;
+    position: relative; }
   #boxes p {
     margin-top: 0.8rem; }
+  #boxes .man {
+    background-image: url("../../images/man.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  #boxes .city {
+    position: relative;
+    background-image: url("../../images/city.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    #boxes .city::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      background-size: cover; }
+  #boxes .rocky {
+    background-image: url("../../images/rocky.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  #boxes .wolf {
+    background-image: url("../../images/wolf.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  #boxes .subway {
+    background-image: url("../../images/subway.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  #boxes .camera {
+    background-image: url("../../images/camera.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
 
 #section {
   background-color: blue; }
